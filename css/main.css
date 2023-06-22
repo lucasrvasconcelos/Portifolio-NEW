@@ -98,7 +98,7 @@ body main #aboutMe
     gap: 55px;
     width: 100%;
     background-color: transparent;
-    padding: 50px;
+    padding: 150px 50px;
 }
 
 body main #aboutMe .aboutMe-description
@@ -242,8 +242,9 @@ body main #about-me-details .about-me-details-description .about-me-details-cont
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    text-align: justify;
     gap: 20px;
-    padding: 10px;
+    padding: 10px 10px;
 }
 
 body main #about-me-details .about-me-details-description .about-me-details-content h3
@@ -280,7 +281,7 @@ body main #about-me-details .about-me-details-description .about-me-details-cont
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 15px;
+    margin-top: 28px;
     gap: 45px 15px;
 }
 
@@ -351,6 +352,7 @@ body main #about-me-details .skills-content
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    flex-wrap: wrap;
     width: 80%;
 }
 
@@ -368,21 +370,46 @@ body main #about-me-details .skills-content h1:hover
 
 body main #about-me-details .skills-content ul.skills
 {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    width: 100%;
+    align-items: flex-start;
     gap: 15px;
     flex-wrap: wrap;
     font-family: var(--font-01);
     list-style: none;
 }
 
-body main #about-me-details .skills-content ul.skills li
+body main #about-me-details .skills-content ul.skills div
 {
-    max-width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     min-width: 320px;
+    max-width: 530px;
+    flex-grow: 1;
+}
+
+body main #about-me-details .skills-content ul.skills div li
+{
+    max-width: inherit;
+    min-width: 320px;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: all .2s cubic-bezier(0.08, 0.82, 0.8, 2.16);;
+}
+
+body main #about-me-details .skills-content ul.skills div > li:hover
+{
+    color: var(--color-hover);
+    box-shadow: 2px 2px 2px var(--color-hover);
+    transform: translateX(-2px) translateY(-2px);
+}
+
+body main #about-me-details .skills-content ul.skills div > li:hover strong i
+{
+    color: var(--color-hover);
 }
 
 body main #about-me-details .skills-content ul.skills li ul
@@ -393,22 +420,44 @@ body main #about-me-details .skills-content ul.skills li ul
     flex-direction: column;
     gap: 25px;
     flex-grow: 1;
-    border-radius: 4px;
-    overflow: hidden;
+    border-radius: 0 0 4px 4px;
     background-color: var(--color-01);
 }
 
-body main #about-me-details .skills-content ul.skills li ul strong
+body main #about-me-details .skills-content ul.skills li strong
 {
     background-color: var(--color-05);
+    cursor: pointer;
+    display: block;
+    position: relative;
+    font-size: 25px;
     padding: 10px;
-    border-radius: 4px;
     font-weight: 400;
-    
     text-transform: uppercase;
 }
 
-body main #about-me-details .skills-content ul.skills li ul p
+body main #about-me-details .skills-content ul.skills li strong i
+{
+    top: 0;
+    right: 10px;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-01);
+    font-size: 35px;
+    transition: all .2s ease-in-out;
+}
+
+body main #about-me-details .skills-content ul.skills li ul
+{
+    overflow: hidden;
+    height: 0;
+    transition: all .3s cubic-bezier(0.08, 0.82, 0.8, 1);
+} 
+
+body main #about-me-details .skills-content ul.skills li p
 {
     max-width: 80%;
     color: var(--color-05);
@@ -416,12 +465,13 @@ body main #about-me-details .skills-content ul.skills li ul p
     font-size: 18px;
 }
 
-body main #about-me-details .skills-content ul.skills li ul li
+body main #about-me-details .skills-content ul.skills li li
 {
     color: var(--color-05);
     padding: 5px 10px;
     font-size: 18px;
 }
+
 
 
 
@@ -651,6 +701,11 @@ img:hover
     body .menu-active i.active-menu:hover::after
     {
         transform: translateX(500%) rotate(-35deg);
+    }
+
+    body main #about-me-details .skills-content ul.skills div
+    {
+        max-width: 320px;
     }
 } 
 
