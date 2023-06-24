@@ -24,7 +24,7 @@ acordion.forEach((element) => {
     element.addEventListener("click", () => {
 
         const ul = element.parentNode.querySelector("ul")
-        const iconAcordion = element.querySelector("i")
+        const iconAcordion = element.querySelector("i:nth-child(2)")
         ul.classList.toggle("expand")
 
 
