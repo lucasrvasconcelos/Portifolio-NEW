@@ -412,6 +412,7 @@ body main #about-me-details .skills-content ul.skills div > li strong
     display: flex;
     gap: 10px;
     align-items: center;
+    padding: 10px 25px 10px 10px;
 }
 
 body main #about-me-details .skills-content ul.skills div > li:hover strong i
@@ -449,7 +450,7 @@ body main #about-me-details .skills-content ul.skills li strong
 {
     background-color: var(--color-05);
     cursor: pointer;
-    display: block;
+
     position: relative;
     font-size: 25px;
     padding: 10px;
@@ -541,9 +542,11 @@ body main #projects .projects-content
 body main #projects .projects-content .projects-item
 {
     width: 320px;
+    height: 320px;
     overflow: hidden;
     position: relative;
     border-radius: 8px;
+    box-shadow: 0 0 10px var(--color-01);
 }
 
 body main #projects .projects-content .projects-item img
@@ -552,6 +555,7 @@ body main #projects .projects-content .projects-item img
     width: 320px;
     height: 320px;
     object-fit: cover;
+    object-position: 0 0;
 }
 
 body main #projects .projects-content .projects-item .links-projects
