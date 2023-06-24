@@ -45,3 +45,5 @@ acordion.forEach((element) => {
     })
 })
 
+const send = document.querySelector('#send')
+

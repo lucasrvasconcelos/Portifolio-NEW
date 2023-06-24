@@ -6,12 +6,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;800&display=swap" rel="stylesheet">   
     
+    
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
-    <script src="./js/main.js" defer></script>
     <title>Lucas Vasconcelos: Desenvolvedor Front-End</title>
 </head>
 <body>
@@ -262,14 +262,42 @@
                         <div class="projects-item">
                             <img src="./img/projects/portfolio_git.png" alt="">
                             <div class="links-projects">
-                                <a href="https://lucasrvasconcelos.github.io/NuvemGotas/" target="_blank"> <i class="ph ph-rocket"></i>Deploy</a>
-                                <a href="https://github.com/lucasrvasconcelos/NuvemGotas" target="_blank"><i class="ph ph-git-merge"></i>Github</a>
+                                <a href="https://lucasrvasconcelos.github.io/Portifolio-NEW/" target="_blank"> <i class="ph ph-rocket"></i>Deploy</a>
+                                <a href="https://github.com/lucasrvasconcelos/Portifolio-NEW" target="_blank"><i class="ph ph-git-merge"></i>Github</a>
                             </div>
                         </div>
 
                     </div>
                 </section>
+
+                <section id="contact">
+                    <h1 class="A-title">Fale Comigo</h1>
+                    <div class="content-contact">
+                        <form action="https://api.staticforms.xyz/submit" method="post">
+                            <div class="input-name">
+                                <input type="text" name="name" id="name" autocomplete="off" required value="aaa"/>
+                                <label for="name">Nome</label>      
+                            </div>
+                            <div class="input-email">
+                                <input type="text" name="email" id="email" autocomplete="off" required value="aaa"/>
+                                <label for="email">Email</label>     
+                            </div>
+                            <div class="input-email">
+                                <textarea name="message" id="message" required rows="6" value="aaa"></textarea>
+                                <label for="message">Mensagem</label>
+                            </div>
+                            <input type="text" name="honeypot" style="display:none">
+                            <input type="hidden" name="accessKey" value="4309fbf1-2281-4daa-ae7e-534803f94fda">
+                            <input type="hidden" name="replyTo" value="lucasvasconcelos900@gmail.com">
+                            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/">
+                            <input type="submit" value="Enviar" id="send"/>
+                        </form>
+                    </div>
+                    
+                </section>
     </main>
     <footer></footer>
+    <script src="./js/main.js" defer></script>
+
 </body>
 </html>

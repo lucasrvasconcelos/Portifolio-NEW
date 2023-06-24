@@ -98,7 +98,7 @@ body main #aboutMe
     gap: 55px;
     width: 100%;
     background-color: transparent;
-    padding: 130px 50px;
+    padding: 130px 10px;
 }
 
 body main #aboutMe .aboutMe-description
@@ -612,6 +612,94 @@ body main #projects .projects-content .projects-item .links-projects a:hover i
 {
     transform: rotateZ(360deg);
 }
+
+body main #contact 
+{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 80px;
+
+}
+
+body main #contact h1
+{
+    font-family: var(--font-01);
+    font-size: 35px;
+}
+
+body main #contact .content-contact
+{
+    margin-top: 85px;
+}
+
+body main #contact .content-contact form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+body main #contact .content-contact form div
+{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+}
+
+body main #contact .content-contact form div label
+{
+    display: flex;
+    align-items: center;
+    top: 5px;
+    left: 5px;
+    font-size: 20px;
+    font-family: var(--font-01);
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    transition: all .2s ease-in-out;
+}
+
+body main #contact .content-contact form div input,
+body main #contact .content-contact form div textarea
+{
+    border-radius: 4px;
+    width: 320px;
+    border: transparent;
+    font-size: 18px;
+    padding: 8px;
+    background-color: var(--color-05);
+}
+
+body main #contact .content-contact form div input:focus ~ label,
+body main #contact .content-contact form div input:valid ~ label,
+body main #contact .content-contact form div textarea:focus ~ label,
+body main #contact .content-contact form div textarea:valid ~ label
+{
+    transform: translateY(-25px);
+    background-color: var(--color-04);
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    color: var(--color-01);
+}
+
+body main #contact .content-contact form div input:valid,
+body main #contact .content-contact form div input:focus,
+body main #contact .content-contact form div textarea:focus,
+body main #contact .content-contact form div textarea:valid
+{
+    outline: 1px solid var(--color-02);
+}
+
 
 
 
