@@ -580,7 +580,7 @@ body main #projects .projects-content .projects-item .links-projects a
 {
     font-size: 20px;
     font-weight: 400;
-    text-align: center;
+    text-align: center; 
     width: 100%;
     font-family: var(--font-01);
     color: var(--color-01);
