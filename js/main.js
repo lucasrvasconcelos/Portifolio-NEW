@@ -1,5 +1,4 @@
 const header = document.querySelector("header")
-console.log(window.screen.width)
 
 document.addEventListener("scroll", (e) => {
 
@@ -29,7 +28,6 @@ acordion.forEach((element) => {
 
 
         if(ul.classList.contains("expand")){
-            console.log(ul.classList.contains("expand"))
             ul.style.height = ul.scrollHeight + 100 + "px"
             ul.style.padding = "15px 0"
             iconAcordion.classList.remove("ph-book-open")
@@ -45,5 +43,5 @@ acordion.forEach((element) => {
     })
 })
 
-const send = document.querySelector('#send')
+
 

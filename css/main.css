@@ -22,6 +22,7 @@ body
 {
     padding: 85px 0;
     background-color: var(--color-04);
+
 }
 
 
@@ -98,7 +99,7 @@ body main #aboutMe
     gap: 55px;
     width: 100%;
     background-color: transparent;
-    padding: 130px 10px;
+    padding: 130px 30px;
 }
 
 body main #aboutMe .aboutMe-description
@@ -292,7 +293,6 @@ body main #about-me-details .about-me-details-description .about-me-details-cont
     padding: 10px;
     position: relative;
     text-align: center;
-    cursor: grab;
     min-width: 100px;
     font-size: 19px;
     font-family: var(--font-01);
@@ -300,14 +300,12 @@ body main #about-me-details .about-me-details-description .about-me-details-cont
     background-color: var(--color-05);
     
     font-weight: 0;
-    flex-grow: 1;
-    transition: all .1s cubic-bezier(0.08, 0.82, 0.8, 2.16);
+    transition: all .3s cubic-bezier(0.08, 0.82, 0.8, 2.16);
 }
 
 body main #about-me-details .about-me-details-description .about-me-details-content ul li:hover
 {
     transform: translateX(-3px) translateY(-3px);
-    box-shadow: 3px 3px 2px var(--color-01);
 }
 
 body main #about-me-details .about-me-details-description .about-me-details-content ul li strong
@@ -450,7 +448,6 @@ body main #about-me-details .skills-content ul.skills li strong
 {
     background-color: var(--color-05);
     cursor: pointer;
-
     position: relative;
     font-size: 25px;
     padding: 10px;
@@ -478,9 +475,8 @@ body main #about-me-details .skills-content ul.skills li strong i:nth-child(2)
 
 body main #about-me-details .skills-content ul.skills li ul
 {
-    overflow: hidden;
     height: 0;
-    transition: all .3s cubic-bezier(0.08, 0.82, 0.8, 1);
+    transition: all .3s ease-in-out;
 } 
 
 body main #about-me-details .skills-content ul.skills li p
