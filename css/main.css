@@ -298,14 +298,15 @@ body main #about-me-details .about-me-details-description .about-me-details-cont
     font-family: var(--font-01);
     border-radius: 5px;
     background-color: var(--color-05);
-    
+    flex-grow: 1;
     font-weight: 0;
-    transition: all .3s cubic-bezier(0.08, 0.82, 0.8, 2.16);
+    transition: all .1s cubic-bezier(0.08, 0.82, 0.8, 2.16);
 }
 
 body main #about-me-details .about-me-details-description .about-me-details-content ul li:hover
 {
     transform: translateX(-3px) translateY(-3px);
+    box-shadow: 3px 3px 1px var(--color-01);
 }
 
 body main #about-me-details .about-me-details-description .about-me-details-content ul li strong
@@ -696,11 +697,10 @@ body main #contact .content-contact form div textarea:valid
     outline: 1px solid var(--color-02);
 }
 
-
-
-
-
-
+body main #contact .content-contact form input[type="submit"]
+{
+    background-color: var(--color-03);
+}
 
 
 /* Default Values */
