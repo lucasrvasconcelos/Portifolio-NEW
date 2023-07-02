@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 
@@ -18,11 +19,16 @@
     --font-01: 'Raleway', sans-serif;
 }
 
+html
+{
+    scroll-behavior: smooth;
+}
+
 body
 {
     padding: 85px 0;
     background-color: var(--color-04);
-
+    
 }
 
 
@@ -205,6 +211,7 @@ body main #about-me-details
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-top: 35px;
 }
 
 body main #about-me-details h1
@@ -490,11 +497,19 @@ body main #about-me-details .skills-content ul.skills li p
     font-size: 18px;
 }
 
+body main #about-me-details .skills-content ul.skills li li i
+{
+    
+}
+
 body main #about-me-details .skills-content ul.skills li li
 {
     color: var(--color-05);
     padding: 5px 10px;
     font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
 }
 
 body main #projects
@@ -625,7 +640,10 @@ body main #contact h1
 {
     font-family: var(--font-01);
     font-size: 35px;
+    position: relative;
 }
+
+
 
 body main #contact .content-contact
 {
@@ -697,10 +715,65 @@ body main #contact .content-contact form div textarea:valid
     outline: 1px solid var(--color-02);
 }
 
-body main #contact .content-contact form input[type="submit"]
+body main #contact .content-contact form .form-submit
 {
-    background-color: var(--color-03);
+    position: relative;
 }
+
+body main #contact .content-contact form button[type="submit"]
+{
+    font-family: var(--font-01);
+    font-weight: 400;
+    cursor: pointer;
+    padding: 8px 20px;
+    background-color: var(--color-05);
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    transition: letter-spacing .3s ease-in-out;
+}
+
+body main #contact .content-contact form button[type="submit"]:hover
+{
+    color: var(--color-05);
+    letter-spacing: 4px;
+    background-color: transparent;
+}
+
+body main #contact .content-contact form .form-submit button[type="submit"]::after
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-size: 400% 400%;
+    background-position: 0;
+    border: none;
+    transition: all .5s ease-in;
+}
+
+body main #contact .content-contact form .form-submit button[type="submit"]:hover::after
+{
+    background-image: linear-gradient(to left, var(--color-02) 50%, var(--color-03) 50%); 
+    transform: scale(1.1);
+    background-position: 100% 100%;
+    z-index: -1;
+}
+
+
+
+
+
+
+
 
 
 /* Default Values */
@@ -718,7 +791,7 @@ a
 
 img
 {
-    filter: grayscale(0);
+    filter: grayscale(0.8) hue-rotate(318deg);
     transition: all .3s ease-in;
     border-radius: 8px;
     position: relative;
@@ -727,7 +800,7 @@ img
 
 img:hover
 {
-    filter: grayscale(1);
+    filter: grayscale(0);
 }
 
 
@@ -808,6 +881,13 @@ img:hover
 .A-title
 {
     position: relative;
+    transition: all .3s linear;
+}
+
+.A-title:hover
+{
+    color: white;
+    
 }
 
 .A-title::before
