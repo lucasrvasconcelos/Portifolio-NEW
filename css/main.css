@@ -789,9 +789,9 @@ a
     color: var(--color-01);
 }
 
-img
+img.person
 {
-    filter: grayscale(0.8) hue-rotate(318deg);
+    filter: grayscale(0.8);
     transition: all .3s ease-in;
     border-radius: 8px;
     position: relative;
@@ -800,9 +800,12 @@ img
 
 img:hover
 {
-    filter: grayscale(0);
+    filter: grayscale(0.3);
 }
 
+img.person::selection{
+    cursor: not-allowed;
+}
 
 /* ANIMAÇÕES */
 
